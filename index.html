@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL MEJOR PODCAST LA MAMI 𐐘🤝ඞ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://pm1.aminoapps.com/6808/39bc79db94962d39a99ec2efd636f1b9984bbe3bv2_00.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.6);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .podcast {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .podcast img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .podcast h2 {
+            margin-top: 10px;
+        }
+        .description {
+            margin-top: 20px;
+            text-align: justify;
+        }
+        .platforms {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .platforms img {
+            width: 100px;
+            height: auto;
+            margin: 0 10px;
+        }
+        .team-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+        }
+        .team-names {
+            text-align: center;
+        }
+        .team-names p {
+            font-size: 18px;
+            margin: 5px;
+        }
+        .popup {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+            z-index: 1000;
+        }
+        .popup img {
+            width: 300px; 
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+            z-index: 1100;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EL MEJOR PODCAST LA MAMI 𐐘🤝ඞ</h1>
+    </header>
+    <div class="container">
+        <div class="podcast">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvFFlC6QYuTfIqmId6OvnYt7Mq8QbFHMUHA&s" alt="Portada del Podcast">
+            <h2>ඞ QUE ES UNA BRECHA DIGITAL, ALFABETISMO DIGITAL, BRECHA GENERACIONAL Y COMO SERIA LA EDUCACION SI FUERAMOS MAS HUMANISTAS LOS DOCENTES ඞ</h2>
+            <div class="platforms">
+                <p>Escucha en:</p>
+                <a href="https://open.spotify.com/show/2sZ832n2JPRcM1UHHcGuNK"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="Spotify"></a>
+                <a href="https://youtu.be/4uAbZDK_-rg?si=K2D-HmykUU8ROZDl" target="_blank"><img src="https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="description">
+            <p>En este primer episodio, te damos la bienvenida a nuestro podcast y discutimos los temas que vamos a cubrir en los próximos episodios. Hablamos de la tecnología digital y también de la digitalización.</p>
+        </div>
+    </div>
+
+    <div class="team-container">
+        <div class="team-names">
+            <p>Leon Moreno Maria Fernanda(Narradora de los temas )</p>
+            <p>Oviedo Flores Yoshep Leonel(Expositor)</p>
+            <p>Segura Luna Sebastian (Creador de la pagina)</p>
+            <p>Suarez Martinez Karen Aline(Expositor)</p>
+            <p>Renata Zepeda Juarez(expositor)</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup1">
+        <button class="close-btn" onclick="closePopup('popup1')">&times;</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMpyPJ4OwK5godj47_FAns77Iihc_x6dxUQ&s" alt="Imagen emergente 1">
+    </div>
+    <div class="popup" id="popup2">
+        <button class="close-btn" onclick="closePopup('popup2')">&times;</button>
+        <img src="https://media.tenor.com/pXbU7RAcQ4MAAAAM/kawaii-kanye-west.gif" alt="Imagen emergente 2">
+    </div>
+    <div class="popup" id="popup3">
+        <button class="close-btn" onclick="closePopup('popup3')">&times;</button>
+        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84277e3b753e8faca23452c2f0" alt="Imagen emergente 3">
+    </div>
+    <div class="popup" id="popup4">
+        <button class="close-btn" onclick="closePopup('popup4')">&times;</button>
+        <img src="https://static.tvn-2.com/clip/b51be82a-31c1-4b4b-b063-57e794bd2bb1_16-9-aspect-ratio_default_1008996.webp" alt="Imagen emergente 4">
+    </div>
+    <div class="popup" id="popup5">
+        <button class="close-btn" onclick="closePopup('popup5')">&times;</button>
+        <img src="https://i.pinimg.com/600x315/ff/66/92/ff66925224132450d3f93396ae568396.jpg" alt="Imagen emergente 5">
+    </div>
+    <div class="popup" id="popup6">
+        <button class="close-btn" onclick="closePopup('popup6')">&times;</button>
+        <img src="https://pm1.aminoapps.com/7363/4f2d289ee96e41fe4f061e01989f8bb160cb93far1-734-720v2_uhq.jpg" alt="Imagen emergente 6">
+    </div>
+    <div class="popup" id="popup7">
+        <button class="close-btn" onclick="closePopup('popup7')">&times;</button>
+        <img src="https://images7.memedroid.com/images/UPLOADED601/5fb07c1163f5b.jpeg" alt="Imagen emergente 7">
+    </div>
+    <div class="popup" id="popup8">
+        <button class="close-btn" onclick="closePopup('popup8')">&times;</button>
+        <img src="data:image/jpeg;base64,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" alt="Imagen emergente 8">
+    </div>
+    <div class="popup" id="popup9">
+        <button class="close-btn" onclick="closePopup('popup9')">&times;</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjjvtcnDKzXPj7emi4T2JyGEIDTK8J-GTRw&s" alt="Imagen emergente 9">
+    </div>
+    <div class="popup" id="popup10">
+        <button class="close-btn" onclick="closePopup('popup10')">&times;</button>
+        <img src="https://pm1.aminoapps.com/7104/811ad443a6eeb15b0c36114de88473be8ed95f91r1
+-1024-1018v2_uhq.jpg" alt="Imagen emergente 10">
+    </div>
+    <div class="popup" id="popup11">
+        <button class="close-btn" onclick="closePopup('popup11')">&times;</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSjg90OVHMxzxZnzYzgOgoYQVzI2pszhaNeA&s" alt="Imagen emergente 11">
+    </div>
+    <div class="popup" id="popup12">
+        <button class="close-btn" onclick="closePopup('popup12')">&times;</button>
+        <img src="https://i.pinimg.com/600x315/ff/66/92/ff66925224132450d3f93396ae568396.jpg" alt="Imagen emergente 12">
+    </div>
+
+    <script>
+        
+        function getRandomPosition() {
+            var x = Math.floor(Math.random() * (window.innerWidth - 300)); 
+            var y = Math.floor(Math.random() * (window.innerHeight - 300)); 
+            return { x: x, y: y };
+        }
+
+               function showPopup(id) {
+            var popup = document.getElementById(id);
+            var position = getRandomPosition();
+            popup.style.left = position.x + 'px';
+            popup.style.top = position.y + 'px';
+            popup.style.display = 'block';
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+               setTimeout(function() {
+            showPopup('popup1');
+            setTimeout(function() {
+                showPopup('popup2');
+                setTimeout(function() {
+                    showPopup('popup3');
+                    setTimeout(function() {
+                        showPopup('popup4');
+                        setTimeout(function() {
+                            showPopup('popup5');
+                            setTimeout(function() {
+                                showPopup('popup6');
+                                setTimeout(function() {
+                                    showPopup('popup7');
+                                    setTimeout(function() {
+                                        showPopup('popup8');
+                                        setTimeout(function() {
+                                            showPopup('popup9');
+                                            setTimeout(function() {
+                                                showPopup('popup10');
+                                                setTimeout(function() {
+                                                    showPopup('popup11');
+                                                    setTimeout(function() {
+                                                        showPopup('popup12');
+                                                    }, 500);
+                                                }, 500);
+                                            }, 500);
+                                        }, 500);
+                                    }, 500);
+                                }, 500);
+                            }, 500);
+                        }, 500);
+                    }, 500);
+                }, 500);
+            }, 3000); 
+        }, 1000); 
+    </script>
+</body>
+</html>
 
